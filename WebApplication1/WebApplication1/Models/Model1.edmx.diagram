@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db6e1fe902c14ee39608523538ff5c2a" Name="Diagram1">
+        <EntityTypeShape EntityType="CT25Team11Model.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.AspNetRole" Width="1.5" PointX="8.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.AspNetUserClaim" Width="1.5" PointX="13.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.AspNetUserLogin" Width="1.5" PointX="13.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.AspNetUser" Width="1.5" PointX="11" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Chitietdonhang" Width="1.5" PointX="1.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Chitietgiaohang" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Doanhthu" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Donhang" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Giaohang" Width="1.5" PointX="3.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Giohang" Width="1.5" PointX="3.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Khuyenmai" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Nguoidung" Width="1.5" PointX="6" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Quanlykho" Width="1.5" PointX="6" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Sanpham" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.sysdiagram" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.TaiKhoan" Width="1.5" PointX="3.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team11Model.Thanhtoan" Width="1.5" PointX="3.75" PointY="20" IsExpanded="true" />
+        <AssociationConnector Association="CT25Team11Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Donhang_Chitietdonhang" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Chitietgiaohang_Donhang" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Chitietgiaohang_Sanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Nguoidung_Donhang" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Quanlykho_Donhang" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Nguoidung_Giaohang" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Nguoidung_Giohang" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Nguoidung_Sanpham" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Nguoidung_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.FK_Nguoidung_Thanhtoan" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team11Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

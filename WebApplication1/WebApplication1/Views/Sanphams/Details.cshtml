@@ -1,0 +1,72 @@
+﻿@model WebApplication1.Models.Sanpham
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sanpham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã Sản Phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Masanpham)
+        </dd>
+        <dt>
+            Tên Sản Phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSanPham)
+        </dd>
+
+
+        <dt>
+            Phân Loại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phanloai)
+        </dd>
+        <dt>
+            Giá:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt>
+            Số lượng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluong)
+        </dd>
+
+        <dt>
+            Thông tin sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Thongtinsanpham)
+        </dd>
+        <dt>
+            Hình Ảnh: @Html.DisplayFor(model => model.HinhAnh)
+
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.HinhAnh)" style="width:350px; height:auto;margin:auto;" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Masanpham }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
