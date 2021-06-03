@@ -20,6 +20,14 @@ namespace WebApplication1.Controllers
         {
             return View(db.Sanphams.ToList());
         }
+
+        public ActionResult Search(string keyword)
+        {
+            var model = db.Sanphams.ToList();
+            model = model.Where(s => s.TenSanPham.ToLower().Contains(keyword.ToLower())).ToList();
+            ViewBag.keyword = keyword;
+            return View("Index2", model);
+        }
         public ActionResult Index2()
         {
             return View(db.Sanphams.ToList());
